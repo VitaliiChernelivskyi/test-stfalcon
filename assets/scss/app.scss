@@ -1,0 +1,366 @@
+html, body {
+  background: #FFFFFF;
+  height: 100%;
+  font-family: Montserrat, serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #23153E;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #23153E;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #443A5A;
+
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #443A5A;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+button {
+  font-family: Montserrat, serif;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  font-weight: 400;
+  background: #6750A4;
+  border-radius: 100px;
+  padding: 15px;
+  border: none;
+  color: #FFFFFF;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 7px 5px 20px -14px #6750A4;;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.block-title__subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #443A5A;
+
+}
+
+.section-strong {
+  margin-top: 83px;
+  margin-bottom: 207px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  height: 707px;
+  background: url("../../public/images/bg-strong.png") no-repeat 100% 100%;
+  background-size: cover;
+
+  &__wrapper {
+    position: relative;
+    padding: 106px;
+
+    &-left {
+      max-width: 500px;
+
+      &__subtitle {
+        margin-top: 37px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        color: #443A5A;
+      }
+
+      .mobile-store_items {
+        margin-top: 37px;
+        display: flex;
+        gap: 40px;
+      }
+
+    }
+
+    &-right {
+      right: 40px;
+      top: 105px;
+      width: 100%;
+      max-width: 537px;
+      height: 100%;
+      max-height: 710px;
+      background: url("../../public/images/iphone-main.png") no-repeat 100% 100%;
+      background-size: contain;
+
+      position: absolute;
+    }
+  }
+
+}
+
+.section-how-it-work {
+  margin-bottom: 160px;
+
+  .how-it-work {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+
+    &__description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__item {
+      display: flex;
+
+      img {
+        margin-right: 42px;
+      }
+    }
+  }
+}
+
+.section-before-during {
+  margin-bottom: 160px;
+
+  .section-before-during__wrapper {
+    position: relative;
+
+    .before-during__item {
+      display: flex;
+
+      &:nth-child(n+2) {
+        margin-top: 100px;
+
+      }
+
+      &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 49px;
+          color: #23153E;
+        }
+
+        .underscore {
+          margin-top: 13px;
+          margin-bottom: 24px;
+          width: 46px;
+          height: 3px;
+          background: #FF2D55;
+        }
+
+        .sub-title {
+          margin-top: 16px;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 39px;
+          color: #443A5A;
+        }
+
+        .description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        &:nth-child(n+2) {
+          margin-left: 90px;
+
+        }
+
+        &:first-of-type {
+          margin-right: 138px;
+
+        }
+
+      }
+
+
+      &_img {
+        img {
+          max-width: 546px;
+        }
+      }
+    }
+
+    &__bg {
+      background: url("../../public/images/sec_before-druging/bg_healthy.svg") no-repeat 100% 100%;
+      background-size: contain;
+      width: 100%;
+      height: 217px;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+.section-blog {
+  margin-bottom: 80px;
+
+  .section-blog__wrapper {
+    margin-top: 60px;
+    display: flex;
+
+    &-post {
+      margin-right: 31px;
+      position: relative;
+
+      &__info {
+        color: #FFFFFF;
+        padding: 0 28px 32px 32px;
+        position: absolute;
+        bottom: 0;
+
+        .title {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 39px;
+        }
+
+        .user-info {
+          margin-top: 12px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 9px;
+          }
+
+          .date-publish {
+            margin-left: 35px;
+          }
+        }
+
+
+      }
+
+    }
+
+    &-posts__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
+
+      &-item {
+        position: relative;
+
+        &-text {
+          color: #FFFFFF;
+          position: absolute;
+          bottom: 0;
+          padding: 0 23px 16px 16px;
+
+          .title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+          }
+
+          .date-publish {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: center;
+    color: #23153E;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 32px;
+      max-height: 32px;
+      margin-left: 9px;
+    }
+  }
+}
+
+.section-form {
+  margin-bottom: 160px;
+
+  &__wrapper {
+    padding: 105px;
+    display: flex;
+    justify-content: space-between;
+    background: url("../../public/images/sec_form/bg-sec-form.png") no-repeat 100% 100%;
+    background-size: contain;
+
+    h2 {
+      color: #FFFFFF;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      background: #6750A4;
+      color: #FFFFFF;
+      border-radius: 100px;
+      max-width: 392px;
+      max-height: 58px;
+      padding: 15px 147px;
+
+      &:hover {
+        box-shadow: 7px 5px 20px -14px #6750A4;;
+        opacity: inherit;
+      }
+    }
+  }
+}
